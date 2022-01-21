@@ -1,0 +1,20 @@
+Body
+Digit
+Effect
+Element (air)
+Element (earth)
+Element (fire)
+Element (water)
+Face
+Image processing keying
+Interior
+Landscape
+Letter
+Machine (TV set)
+Machine (car)
+Machine vision (fisheye)
+RuttEtra video synthesizer
+Steina
+Violin
+Woody
+Stripes
