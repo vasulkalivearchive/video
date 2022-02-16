@@ -25,7 +25,7 @@ python video_tagging.py --video_path "path/to/videos"
 |`--output_path`|output path for predicitions|str|"output/"|
 |`--cpu`|if True, tagging runs on CPU|bool|False|
 |`--gpu_encode`|if True, video encoding runs on GPU|bool|False|
-|`--video_bitrate`|final video bitrate, if 0 bit rate is set to source video height * 4.5|str|0|
+|`--video_bitrate`|final video bitrate, if 0 bit rate is set to source video height * 4500|str|0|
 |`--show_images`|if true, processed frames will be displayed|bool|False|
 |`--save_video`|if True, annotations are rendered to video|bool|False|
 |`--plot_predict`|if True, prediction plot is saved to image|bool|False|

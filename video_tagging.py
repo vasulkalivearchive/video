@@ -257,8 +257,8 @@ def predict_video(args, predict_path, tag_names_video, image_size=(299, 299)):
                 with open(output_file_dir + filename_woext + '.json', 'w') as outfile:
                     json.dump(annotations_dict, outfile)
 
-                # if os.path.exists(video_writer_name):
-                #     os.remove(video_writer_name)
+                if os.path.exists(video_writer_name):
+                    os.remove(video_writer_name)
 
     print("All videos done!")
 
@@ -278,7 +278,7 @@ if __name__ == '__main__':
     parser.add_argument('--gpu_encode', type=bool, default=False,
                         help='if True, video encode runs on GPU') 
     parser.add_argument('--video_bitrate', type=str, default=str(0),
-                        help='final video bitrate, if 0 bit rate is set to source video height * 4.5')
+                        help='final video bitrate, if 0 bit rate is set to source video height * 6500')
     parser.add_argument('--show_images', type=bool, default=False,
                         help='if true, processed frames will be displayed')
     parser.add_argument('--save_video', type=bool, default=False,
