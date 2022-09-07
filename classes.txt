@@ -1,19 +1,19 @@
 Body
 Digit
 Effect
-Element (air)
-Element (earth)
-Element (fire)
-Element (water)
+Air
+Earth
+Fire
+Water
 Face
-Image processing keying
+Keying
 Interior
 Landscape
 Letter
-Machine (TV set)
-Machine (car)
+TV set
+Car
 Machine vision (fisheye)
-RuttEtra video synthesizer
+Rutt/Etra Scan processor
 Steina
 Violin
 Woody

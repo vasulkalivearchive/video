@@ -32,32 +32,33 @@ python video_tagging.py --video_path "path/to/videos"
 |`--skip_videos`|skip selected videos in video_path|str|[]|
 
 ## The pre trained model on Vasulka's database can be downloaded here:
-* [video_Vasulka.zip](https://vasulkalivearchive.net/models/video_Vasulka.zip) 
+* Model 1 (Xception): [video_Vasulka.zip](https://vasulkalivearchive.net/models/video_Vasulka.zip) 
+* Model 2 (NasNetLarge): [video_Vasulka2.zip](https://vasulkalivearchive.net/models/video_Vasulka2.zip) 
+### The model allows you to tag these categories (metric f1-score [-]):
 
-### The model allows you to tag these categories:
 
-| **Tag name**             | **F1-score** |
-|--------------------------|----------|
-| Body                     | 0.865    |
-| Digit                    | 0.909    |
-| Effect                   | 0.505    |
-| Elementair               | 0.712    |
-| Elementearth             | 0.661    |
-| Elementfire              | 0.704    |
-| Elementwater             | 0.676    |
-| Face                     | 0.910    |
-| Imageprocessingkeying    | 0.593    |
-| Interior                 | 0.819    |
-| Landscape                | 0.769    |
-| Letter                   | 0.923    |
-| MachineTVset             | 0.758    |
-| Machinecar               | 0.920    |
-| Machinevisionfisheye     | 0.894    |
-| RuttEtravideosynthesizer | 0.571    |
-| Steina                   | 0.340    |
-| Violin                   | 0.535    |
-| Woody                    | 0.942    |
-| Stripes                  | 0.624    |
+|                          | Model 1 |  | Model 2 |
+| ------------------------ | ------- |  | ------- |
+| Body                     | 0.865   |  | 0.855   |
+| Digit                    | 0.909   |  | 0.889   |
+| Effect                   | 0.505   |  | 0.305   |
+| Air                      | 0.712   |  | 0.758   |
+| Earth                    | 0.661   |  | 0.632   |
+| Fire                     | 0.704   |  | 0.437   |
+| Water                    | 0.676   |  | 0.714   |
+| Face                     | 0.910   |  | 0.897   |
+| Keying                   | 0.593   |  | 0.627   |
+| Interior                 | 0.819   |  | 0.777   |
+| Landscape                | 0.769   |  | 0.743   |
+| Letter                   | 0.923   |  | 0.899   |
+| Car                      | 0.920   |  | 0.920   |
+| TV set                   | 0.758   |  | 0.640   |
+| Machine vision (fisheye) | 0.894   |  | 0.859   |
+| Rutt/Etra Scan processor | 0.571   |  | 0.769   |
+| Steina                   | 0.340   |  | 0.413   |
+| Stripes                  | 0.624   |  | 0.718   |
+| Violin                   | 0.535   |  | 0.502   |
+| Woody                    | 0.942   |  | 0.923   |
 
 ## Dependencies
 ```
@@ -69,8 +70,11 @@ numpy==1.18.5
 ```
 
 ### Reference
-This repository uses the [Xception] model proposed in:  
-Chollet, F. (2017). Xception: Deep learning with depthwise separable convolutions. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 1251-1258).
+This repository uses two models. First is [Xception] model proposed in:  
+Chollet, F. (2017). Xception: Deep learning with depthwise separable convolutions. In Proceedings of the IEEE conference on computer vision and pattern recognition (p. 1251-1258).
+
+Second is [NasNetLarge] model proposed in:  
+ZOPH, Barret, et al. (2018). Learning transferable architectures for scalable image recognition. In: Proceedings of the IEEE conference on computer vision and pattern recognition. p. (8697-8710).
 
 ### Cite
 Sikora, P. (2022). *MediaArtLiveArchive – Video Tagging* [Software]. https://github.com/vasulkalivearchive/video
